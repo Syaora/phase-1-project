@@ -1,0 +1,23 @@
+.banner-bg {
+	background-color: #8a66cc;
+}
+
+.resultBox {
+	height: 100vh
+}
+
+.card-text { 
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+#websiteTitle{
+  font-family: Segoe Print, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+div.justify-content-between{
+  margin-top: auto;
+}
