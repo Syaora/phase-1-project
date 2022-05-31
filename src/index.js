@@ -1,6 +1,6 @@
 //On page load
 document.addEventListener("DOMContentLoaded", () => {
-  fetch(`https://api.spoonacular.com/recipes/complexSearch?addRecipeInformation=true&apiKey=1fec5b25e4284f3bab1f2ba02ea54e05`)
+  fetch(`https://api.spoonacular.com/recipes/complexSearch?addRecipeInformation=true&apiKey=${RECIPE_API_KEY}`)
     .then(response => response.json())
     .then(data => {
       displayCard(data.results)
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Search Bar Function
 function searchRecipe(event) {
-  fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${event.target.value}&addRecipeInformation=true&apiKey=1fec5b25e4284f3bab1f2ba02ea54e05`)
+  fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${event.target.value}&addRecipeInformation=true&apiKey=${RECIPE_API_KEY}`)
     .then(response => response.json())
     .then(data => {
       displayCard(data.results)
@@ -84,7 +84,7 @@ function viewRecipe(recipe) {
   }
 
   //Gets recipe information
-  fetch(`https://api.spoonacular.com/recipes/extract?url=${recipe}&apiKey=1fec5b25e4284f3bab1f2ba02ea54e05`)
+  fetch(`https://api.spoonacular.com/recipes/extract?url=${recipe}&apiKey=${RECIPE_API_KEY}`)
     .then(response => response.json())
     .then(data => {
       const recipeInfo = document.createElement("div")

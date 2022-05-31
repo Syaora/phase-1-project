@@ -14,7 +14,7 @@ This is a single page application project where I had to integrate a public API 
 The features of the website is that a user would be able to search a recipe, like a recipe, see a list of their liked recipes, and view recipes.
 
 ## Setup
- - Run `json-server --watch db.json` to get the backend started
+ - Run `npx json-server --watch db.json` to get the backend started
  - Open `index.html` file on browser
 
  ## Endpoints
